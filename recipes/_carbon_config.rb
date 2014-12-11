@@ -18,7 +18,7 @@
 #
 
 file "carbon.conf" do
-  path "#{node['graphite']['base_dir']}/conf/carbon.conf"
+  path "#{node['graphite']['base_dir']}/conf/carbon.conf.tpl"
   owner node['graphite']['user']
   group node['graphite']['group']
   mode 0644

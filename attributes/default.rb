@@ -46,7 +46,7 @@ default['graphite']['graph_templates'] = [
 default['graphite']['system_packages'] =
   case node['platform_family']
   when 'debian'
-    %w{python-cairo-dev python-rrdtool}
+    %w{python-cairo-dev python-rrdtool libmysqlclient-dev libapache2-mod-wsgi}
   when 'rhel'
     case node['platform']
     when 'amazon'

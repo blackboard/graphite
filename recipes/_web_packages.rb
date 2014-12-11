@@ -32,6 +32,7 @@ python_pip 'pytz'
 python_pip 'pyparsing'
 python_pip 'python-memcached'
 python_pip 'uwsgi'
+python_pip 'MySQL-python'
 
 python_pip 'graphite_web' do
   package_name lazy {
