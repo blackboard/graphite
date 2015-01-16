@@ -14,5 +14,6 @@ exec uwsgi --processes <%= node['graphite']['uwsgi']['workers'] %> \
 --no-orphans --master \
 --procname graphite-web \
 --die-on-term \
---socket <%= node['graphite']['uwsgi']['socket'] %> \
---chmod-socket 766
+--chmod 766 \
+--socket <%= node['graphite']['uwsgi']['socket'] %> 
+
